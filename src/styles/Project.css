@@ -87,3 +87,17 @@ margin-top: 10px;
     text-align: left;
 }
 }
+@media (max-width: 768px) {
+.project-card,
+.project-card.reverse {
+    flex-direction: column;
+}
+
+.project-content {
+    text-align: center;
+}
+
+.project-content ul {
+    text-align: left;
+}
+}

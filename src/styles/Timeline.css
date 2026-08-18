@@ -115,3 +115,10 @@ border-radius: 20px;
 
 background: rgba(255, 255, 255, 0.3);
 }
+.timeline-scroll {
+overflow-x: auto;
+}
+
+.timeline-line {
+min-width: 1000px;
+}

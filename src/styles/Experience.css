@@ -100,3 +100,13 @@ border: 1px solid rgba(135, 206, 250, 0.2);
     height: 60px;
 }
 }
+@media (max-width: 768px) {
+.experience-header,
+.experience-header.reverse {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 20px;
+}
+}
