@@ -1,0 +1,67 @@
+.profile-section {
+text-align: center;
+}
+
+.profile-label {
+letter-spacing: 4px;
+
+opacity: 0.7;
+
+margin-bottom: 15px;
+}
+
+.profile-description {
+max-width: 700px;
+
+margin: 20px auto 60px;
+
+opacity: 0.8;
+}
+
+.profile-grid {
+display: grid;
+
+grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+);
+
+gap: 25px;
+}
+
+.profile-card {
+padding: 35px;
+
+border-radius: 20px;
+
+backdrop-filter: blur(20px);
+
+background: rgba(255, 255, 255, 0.1);
+
+border: 1px solid rgba(255, 255, 255, 0.1);
+
+transition: 0.3s;
+}
+
+.profile-card:hover {
+transform: translateY(-10px);
+}
+
+.profile-card h3 {
+margin-bottom: 15px;
+}
+
+.skill-rating {
+font-size: 28px;
+
+letter-spacing: 3px;
+
+text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+body.light-mode .profile-card {
+background: rgba(135, 206, 250, 0.08);
+
+border: 1px solid rgba(135, 206, 250, 0.2);
+}

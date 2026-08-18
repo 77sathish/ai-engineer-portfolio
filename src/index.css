@@ -1,0 +1,48 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+
+color: white;
+
+background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b,
+    #0f172a
+);
+
+min-height: 100vh;
+
+transition:
+    background 0.5s ease,
+    color 0.5s ease;
+}
+body.light-mode {
+color: #0f20be;
+
+background: linear-gradient(
+    135deg,
+    #f8fbff,
+    #eef8ff,
+    #ffffff
+);
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode p,
+body.light-mode a {
+color: #0838c8;
+}
+body.light-mode .glass-card,
+body.light-mode .skill-card,
+body.light-mode .certificate-card,
+body.light-mode .timeline-card,
+body.light-mode .education-card {
+background: rgba(135, 206, 250, 0.08);
+
+backdrop-filter: blur(20px);
+
+border: 1px solid rgba(135, 206, 250, 0.2);
+}

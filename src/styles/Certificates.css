@@ -1,0 +1,26 @@
+.certificate-grid {
+display: grid;
+
+grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+);
+
+gap: 20px;
+}
+
+.certificate-card {
+padding: 25px;
+
+border-radius: 20px;
+
+backdrop-filter: blur(20px);
+
+background: rgba(255, 255, 255, 0.1);
+
+transition: 0.3s;
+}
+
+.certificate-card:hover {
+transform: translateY(-8px);
+}

@@ -1,0 +1,49 @@
+/* Reset */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+
+color: white;
+
+background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b,
+    #0f172a
+);
+
+min-height: 100vh;
+}
+
+section {
+padding: 100px 10%;
+}
+
+h1,
+h2,
+h3 {
+margin-bottom: 20px;
+}
+
+p {
+line-height: 1.7;
+}
+
+ul {
+list-style: none;
+}
+
+a {
+text-decoration: none;
+color: white;
+}

@@ -1,0 +1,206 @@
+/* =========================
+EDUCATION
+========================= */
+
+.education-section {
+position: relative;
+padding: 120px 8%;
+overflow: hidden;
+}
+
+.education-container {
+max-width: 1100px;
+margin: 0 auto;
+}
+
+/* Heading */
+
+.education-heading {
+max-width: 700px;
+margin-bottom: 80px;
+}
+
+.section-label {
+font-size: 13px;
+letter-spacing: 4px;
+font-weight: 600;
+opacity: 0.6;
+margin-bottom: 15px;
+}
+
+.education-heading h2 {
+font-size: clamp(40px, 6vw, 70px);
+line-height: 1;
+margin: 0;
+}
+
+.education-heading h2 span {
+opacity: 0.45;
+}
+
+.education-intro {
+max-width: 600px;
+margin-top: 25px;
+font-size: 17px;
+line-height: 1.8;
+opacity: 0.65;
+}
+
+/* Timeline */
+
+.education-timeline {
+position: relative;
+margin-left: 20px;
+padding-left: 50px;
+}
+
+.education-timeline::before {
+content: "";
+position: absolute;
+left: 0;
+top: 10px;
+width: 1px;
+height: calc(100% - 20px);
+background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+);
+}
+
+/* Timeline item */
+
+.education-item {
+position: relative;
+margin-bottom: 60px;
+}
+
+.education-item:last-child {
+margin-bottom: 0;
+}
+
+/* Timeline dot */
+
+.education-dot {
+position: absolute;
+left: -56px;
+top: 8px;
+
+width: 12px;
+height: 12px;
+
+border-radius: 50%;
+
+background: white;
+
+box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 25px rgba(120, 180, 255, 0.5);
+}
+
+/* Education card */
+
+.education-card {
+position: relative;
+
+padding: 32px;
+
+border-radius: 22px;
+
+background: rgba(255, 255, 255, 0.035);
+
+border: 1px solid rgba(255, 255, 255, 0.09);
+
+backdrop-filter: blur(18px);
+-webkit-backdrop-filter: blur(18px);
+
+transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    background 0.4s ease;
+}
+
+.education-card:hover {
+transform: translateX(8px);
+
+background: rgba(255, 255, 255, 0.055);
+
+border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Year */
+
+.education-year {
+display: inline-block;
+
+margin-bottom: 15px;
+
+font-size: 13px;
+
+letter-spacing: 2px;
+
+opacity: 0.5;
+}
+
+/* Text */
+
+.education-card h3 {
+margin: 0;
+
+font-size: 28px;
+}
+
+.education-card h4 {
+margin: 10px 0;
+
+font-size: 17px;
+
+font-weight: 500;
+
+opacity: 0.75;
+}
+
+.education-field {
+margin-top: 15px;
+
+font-size: 15px;
+
+opacity: 0.55;
+}
+
+/* Metrics */
+
+.education-meta {
+margin-top: 25px;
+
+display: flex;
+
+gap: 30px;
+}
+
+.education-meta span {
+display: flex;
+
+flex-direction: column;
+
+gap: 5px;
+
+font-size: 12px;
+
+text-transform: uppercase;
+
+letter-spacing: 2px;
+
+opacity: 0.5;
+}
+
+.education-meta strong {
+font-size: 22px;
+
+letter-spacing: 0;
+
+color: white;
+
+opacity: 1;
+}
