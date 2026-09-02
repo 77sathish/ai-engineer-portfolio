@@ -30,10 +30,17 @@ const handleSubmit = async (event) => {
         body: JSON.stringify(data)
     });
 
-    const result = await response.json();
+    const responseText = await response.text();
+    let result = {};
+
+    try {
+        result = responseText ? JSON.parse(responseText) : {};
+    } catch {
+        throw new Error(`Server returned an invalid response (${response.status}).`);
+    }
 
     if (!response.ok) {
-        throw new Error(result.error || "Unable to send your message.");
+        throw new Error(result.error || `Unable to send your message (${response.status}).`);
     }
 
     status.textContent = "Thanks! Your message has been sent successfully.";
