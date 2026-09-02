@@ -36,7 +36,8 @@ export default async function handler(req, res) {
       method: "POST",
       headers: {
         Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "User-Agent": "ai-engineer-portfolio-contact-form"
       },
       body: JSON.stringify({
         from: process.env.CONTACT_FROM_EMAIL || "Portfolio Contact <onboarding@resend.dev>",
@@ -57,7 +58,9 @@ export default async function handler(req, res) {
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
       console.error("Resend error:", errorData);
-      return res.status(502).json({ error: "The message could not be sent. Please try again." });
+      return res.status(502).json({
+        error: errorData?.message || errorData?.name || "The message could not be sent. Please try again."
+      });
     }
 
     return res.status(200).json({ success: true });
