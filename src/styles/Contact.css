@@ -1,28 +1,21 @@
 .contact-section {
 text-align: center;
+padding-bottom: 80px;
 }
 
 .contact-card {
 max-width: 700px;
-
 margin: auto;
-
 padding: 60px 40px;
-
 border-radius: 30px;
-
 backdrop-filter: blur(20px);
-
 background: rgba(255, 255, 255, 0.1);
-
 border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .contact-label {
 letter-spacing: 4px;
-
 opacity: 0.7;
-
 margin-bottom: 15px;
 }
 
@@ -36,45 +29,29 @@ margin-bottom: 20px;
 
 .contact-location {
 display: flex;
-
 justify-content: center;
-
 align-items: center;
-
 gap: 10px;
-
 margin-bottom: 40px;
-
 opacity: 0.8;
 }
 
 .social-links {
 display: flex;
-
 flex-wrap: wrap;
-
 justify-content: center;
-
 gap: 20px;
 }
 
 .social-links a {
 display: flex;
-
 align-items: center;
-
 gap: 10px;
-
 padding: 15px 25px;
-
 border-radius: 15px;
-
 backdrop-filter: blur(20px);
-
 background: rgba(255, 255, 255, 0.08);
-
 border: 1px solid rgba(255, 255, 255, 0.1);
-
 transition: 0.3s;
 }
 
@@ -82,15 +59,147 @@ transition: 0.3s;
 transform: translateY(-5px);
 }
 
+.feedback-form-wrapper {
+margin-top: 55px;
+padding-top: 45px;
+border-top: 1px solid rgba(255, 255, 255, 0.12);
+text-align: left;
+}
+
+.feedback-heading {
+text-align: center;
+margin-bottom: 28px;
+}
+
+.feedback-label {
+letter-spacing: 3px;
+font-size: 0.8rem;
+opacity: 0.7;
+margin-bottom: 10px;
+}
+
+.feedback-heading h3 {
+margin-bottom: 8px;
+}
+
+.feedback-heading p:last-child {
+opacity: 0.75;
+line-height: 1.6;
+}
+
+.feedback-form {
+display: flex;
+flex-direction: column;
+gap: 18px;
+}
+
+.feedback-field-row {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 18px;
+}
+
+.feedback-field {
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.feedback-field label {
+font-size: 0.9rem;
+font-weight: 600;
+}
+
+.feedback-field input,
+.feedback-field select,
+.feedback-field textarea {
+width: 100%;
+box-sizing: border-box;
+padding: 13px 15px;
+border-radius: 12px;
+background: rgba(255, 255, 255, 0.07);
+border: 1px solid rgba(255, 255, 255, 0.15);
+color: inherit;
+font: inherit;
+outline: none;
+transition: border-color 0.2s, background 0.2s;
+}
+
+.feedback-field input:focus,
+.feedback-field select:focus,
+.feedback-field textarea:focus {
+border-color: currentColor;
+background: rgba(255, 255, 255, 0.1);
+}
+
+.feedback-field textarea {
+resize: vertical;
+min-height: 140px;
+}
+
+.feedback-field select option {
+color: #111;
+background: #fff;
+}
+
+.feedback-submit {
+border: 0;
+border-radius: 12px;
+padding: 14px 24px;
+font: inherit;
+font-weight: 700;
+cursor: pointer;
+background: currentColor;
+color: #111;
+transition: transform 0.2s, opacity 0.2s;
+}
+
+.feedback-submit:hover:not(:disabled) {
+transform: translateY(-2px);
+}
+
+.feedback-submit:disabled {
+cursor: wait;
+opacity: 0.6;
+}
+
+.feedback-status {
+min-height: 24px;
+text-align: center;
+font-size: 0.9rem;
+}
+
+.feedback-status.success {
+font-weight: 600;
+}
+
+.feedback-status.error {
+font-weight: 600;
+}
+
 body.light-mode .contact-card,
 body.light-mode .social-links a {
 background: rgba(135, 206, 250, 0.08);
-
 border: 1px solid rgba(135, 206, 250, 0.2);
+}
+
+body.light-mode .feedback-field input,
+body.light-mode .feedback-field select,
+body.light-mode .feedback-field textarea {
+background: rgba(135, 206, 250, 0.06);
+border-color: rgba(135, 206, 250, 0.2);
 }
 
 @media (max-width: 768px) {
 .social-links {
     flex-direction: column;
+}
+
+.feedback-field-row {
+    grid-template-columns: 1fr;
+}
+
+.contact-card {
+    padding: 45px 22px;
 }
 }
