@@ -1,3 +1,4 @@
+
 import profileImage from "../assets/profile.png";
 
 import { FaGithub } from "react-icons/fa";
@@ -10,6 +11,7 @@ function Hero() {
 return (
     <section className="hero">
     <div className="hero-container">
+
         <div className="hero-image">
         <img
             src={profileImage}
@@ -34,24 +36,31 @@ return (
         </p>
 
         <div className="hero-buttons">
+
         <a href="#projects">
             <button className="hero-button">
             View Projects
             </button>
         </a>
 
-        <a href="/resume.pdf" download>
+        <a
+            href="/resume.pdf"
+            download="Sathish-Kanthi-Resume.pdf"
+        >
             <button className="hero-button">
             Download Resume
             </button>
         </a>
+
         </div>
 
         <div className="hero-socials">
+
         <a
             href="https://github.com/77sathish"
             target="_blank"
             rel="noreferrer"
+            aria-label="GitHub"
         >
             <FaGithub />
         </a>
@@ -60,17 +69,24 @@ return (
             href="https://www.linkedin.com/in/sathish-kanthi-60b9b7226/"
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn"
         >
             <FaLinkedin />
         </a>
 
-        <a href="mailto:kanthi.sathish777@gmail.com">
+        <a
+            href="mailto:kanthi.sathish777@gmail.com"
+            aria-label="Email"
+        >
             <MdEmail />
         </a>
+
         </div>
+
     </div>
     </section>
 );
 }
 
 export default Hero;
+
