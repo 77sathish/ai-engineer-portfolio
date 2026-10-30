@@ -804,7 +804,7 @@ AI tools played a major role in creating this project. I am documenting that con
 
 **Transparency note:** ChatGPT and Claude were used extensively for code generation, while Gemini was used for image generation. I used VS Code to organise and work with the files and Git Bash to run the project. The project was run and deployed through the development and hosting tools described above. AI assistance is acknowledged rather than presented as entirely hand-written code.
 
-## 15. Useful links
+## 16. Useful links
 
 - **Live portfolio:** https://ai-engineer-portfolio-three-pi.vercel.app/
 - **GitHub repository:** https://github.com/77sathish/ai-engineer-portfolio
@@ -825,7 +825,7 @@ The project is intentionally kept lightweight: it does not currently need a data
 
 I hope this repository helps beginners understand how a modern portfolio can be organised, developed locally, connected to an external API, and deployed to the web. You are welcome to explore the source, learn from the structure, and adapt the approach for your own projects.
 
-## 16. Author
+## 17. Author
 
 **Sathish Kanthi**
 
